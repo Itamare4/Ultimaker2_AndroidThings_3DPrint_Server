@@ -13,10 +13,40 @@ Ultimaker 2 - AndroidThings 3D Print Server based on Pico Pro Maker Kit
 * PC with adb tools
 
 ### Installation ###
-The package will do most of the things for you, download DJI Ronin App to your android mobile, connect it through usb.<br>
-Running the launch file will open the app on your mobile, just press 'MOTORS'.<br>
-The phone capturing resolution will set to 360x640, the script will locate your phone capturing address(SJI) automatically.
+First we need to install some software buttons back/home, will do it by installing:
+https://play.google.com/store/apps/details?id=com.appspot.app58us.backkey&hl=iw
 
+AndroidThings doesn't not nativly show accessability options, will need to enable it by - 
+```
+adb install com.appspot.app58us.backkey.apk
+adb shell settings put secure enabled_accessibility_services %accessibility:com.appspot.app58us.backkey/com.appspot.app58us.backkey.BackkeyService
+```
+
+Configure by running - 
+```
+adb shell am start -n com.appspot.app58us.backkey/com.appspot.app58us.backkey.MainActivity
+```
+
+Install the great app GCodePrintr (PAY 4.5$!!)
+https://play.google.com/store/apps/details?id=de.dietzm.gcodesimulatorprinter
+```
+adb install de.dietzm.gcodesimulatorprinter.apk
+```
+
+In order to run the app on boot will use:
+https://play.google.com/store/apps/details?id=com.autostart
+
+Run on adb -
+```
+adb shell am start -n com.autostart/com.autostart.AutoStartActivity
+```
+Configure it to run GCodePrintr at startup.
+
+
+Download PC version of GCodePrintr from -
+https://www.thingiverse.com/thing:44286
+
+Now you can send the Gcode(from slic3r, Simplify3D, Cura etc.) directly to your printer server through WIFI.
 
 ### Examples ###
 <p align="center">
