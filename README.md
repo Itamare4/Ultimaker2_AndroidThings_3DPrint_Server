@@ -13,7 +13,7 @@ Ultimaker 2 - AndroidThings 3D Print Server based on Pico Pro Maker Kit
 * PC with adb tools
 
 ### Installation ###
-First we need to install some software buttons back/home, will do it by installing:
+First we need to install some software buttons back/home, will do it by installing:<br>
 https://play.google.com/store/apps/details?id=com.appspot.app58us.backkey&hl=iw
 
 AndroidThings doesn't not nativly show accessability options, will need to enable it by - 
@@ -27,13 +27,13 @@ Configure by running -
 adb shell am start -n com.appspot.app58us.backkey/com.appspot.app58us.backkey.MainActivity
 ```
 
-Install the great app GCodePrintr (PAY 4.5$!!)
+Install the great app GCodePrintr (PAY 4.5$!!)<br>
 https://play.google.com/store/apps/details?id=de.dietzm.gcodesimulatorprinter
 ```
 adb install de.dietzm.gcodesimulatorprinter.apk
 ```
 
-In order to run the app on boot will use:
+In order to run the app on boot will use:<br>
 https://play.google.com/store/apps/details?id=com.autostart
 
 Run on adb -
@@ -43,7 +43,7 @@ adb shell am start -n com.autostart/com.autostart.AutoStartActivity
 Configure it to run GCodePrintr at startup.
 
 
-Download PC version of GCodePrintr from -
+Download PC version of GCodePrintr from -<br>
 https://www.thingiverse.com/thing:44286
 
 Now you can send the Gcode(from slic3r, Simplify3D, Cura etc.) directly to your printer server through WIFI.
