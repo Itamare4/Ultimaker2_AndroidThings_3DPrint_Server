@@ -1,5 +1,5 @@
 
-Ultimaker 2 - AndroidThings 3D Print Server based on Pico Pro Maker Kit
+Ultimaker 2 - AndroidThings 3D Print Server based on Pico Pro Maker Kit & GCodePrintr
 ------------------------
 <p align="center">
 <img src="https://d15z4ngi7vchau.cloudfront.net/media/catalog/product/cache/1/image/9df78eab33525d08d6e5fb8d27136e95/p/i/pico-pi-imx7-startkit-overview.jpg" height="400" width=auto>
